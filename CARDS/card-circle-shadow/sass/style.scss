@@ -1,0 +1,86 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+	font-size: 62.5%;
+	font-family: sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	background-color: #333;
+}
+
+.card {
+	position: relative;
+	height: 600px;
+	width: 400px;
+	border-radius: 20px;
+	overflow: hidden;
+
+	&__btn {
+		position: absolute;
+		top: 0.5em;
+		right: 0.5em;
+		padding: 0.2em;
+		font-size: 3rem;
+		color: #fff;
+		cursor: crosshair;
+		z-index: 2;
+
+		&:hover ~ .card__shadow {
+			clip-path: circle(150% at 100% 0);
+		}
+	}
+
+	&__image {
+		position: absolute;
+		inset: 0;
+		height: 100%;
+		background-image: url('../img/woman-8035772_1280.jpg');
+		background-size: cover;
+		background-position: 65% 0;
+		z-index: 0;
+	}
+
+	&__shadow {
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		position: relative;
+		height: 100%;
+		padding: 4em 0;
+		clip-path: circle(0 at 92% 6%);
+		background-color: rgba(0, 0, 0, 0.7);
+		overflow: hidden;
+		transition: clip-path 0.5s;
+		z-index: 1;
+	}
+
+	&__text {
+		width: 70%;
+		text-align: center;
+		color: #fff;
+
+		h2 {
+			padding: 1em 0;
+			font-size: 2.6rem;
+			color: gold;
+		}
+
+		p {
+			font-size: 1.6rem;
+		}
+	}
+}

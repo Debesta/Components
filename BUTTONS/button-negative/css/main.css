@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #333;
+}
+
+.btn {
+  position: relative;
+  padding: 20px 40px;
+  border: 3px solid #fff;
+  border-radius: 0.4em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 5rem;
+  background: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.btn:hover {
+  color: #fff;
+  background-color: #333;
+}/*# sourceMappingURL=main.css.map */
