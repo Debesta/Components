@@ -39,10 +39,15 @@ body {
 		opacity: 1;
 	}
 
+	&:hover &__img {
+		filter: blur(8px);
+	}
+
 	&__img {
 		position: absolute;
 		inset: 0;
 		width: 100%;
+		transition: filter 0.5s;
 	}
 
 	&__blur {
@@ -53,6 +58,7 @@ body {
 		inset: 0;
 		width: 100%;
 		background-color: rgba($color: #8b8b8b, $alpha: 0.8);
+		filter: blur();
 		transition: opacity 0.5s;
 		opacity: 0;
 	}
