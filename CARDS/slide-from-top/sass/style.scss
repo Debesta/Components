@@ -1,0 +1,49 @@
+@use 'animations' as anim;
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+	font-size: 62.5%;
+	font-family: sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	background-color: #333;
+}
+
+.card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translateY(-70%);
+	height: 200px;
+	width: 300px;
+	border: 10px solid #ddd;
+	border-radius: 20px;
+	animation: slide-top 1.5s 1s both;
+	opacity: 0;
+	overflow: hidden;
+
+	&__text {
+		text-align: center;
+		color: #ddd;
+
+		h1 {
+			padding: 1em 0;
+			font-size: 5rem;
+		}
+	}
+}

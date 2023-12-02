@@ -1,0 +1,11 @@
+@keyframes slide-top {
+	from {
+		opacity: 0;
+		transform: translateY(-70%);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
