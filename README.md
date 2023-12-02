@@ -29,3 +29,8 @@ Live: [Netlify](https://card-circle-shadow.netlify.app/)
 
 Card is "bluring" and scaling after hover <br/>
 Live: [Netlify](https://card-blur.netlify.app/)
+
+### slide-from-top
+
+It's animated card that's slide from the top to center position with transparent effect.
+Live: [Netlify](https://slide-from-top.netlify.app/)
