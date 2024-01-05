@@ -26,13 +26,19 @@ body {
 	display: grid;
 	grid-template-rows: 250px 1fr 60px;
 	position: relative;
-	height: 700px;
+	height: 650px;
 	width: 400px;
 	margin: 0 2em;
 	border-radius: 10px;
+	box-shadow: 0 0 10px black;
 	overflow: hidden;
-	transition: transform 0.5s;
+	transition: box-shadow .3s, transform .3s;
 	background-color: #ddd;
+
+	&:hover{
+		box-shadow: 0 0 30px black;
+		transform: translateY(-20px);
+	}
 
 	&__img-box{
 		grid-row: 1/2;
@@ -77,10 +83,39 @@ body {
 
 	&__time-reading{
 		position: absolute;
-		bottom: 150px;
+		bottom: 20%;
 		padding: 0.2em;
 		font-size: 1.2rem;
 		font-style: italic;
 		color: grey;
+	}
+
+	&__btn{
+		position: absolute;
+		bottom: 19%;
+		right: 0;;
+		transform: translateX(-50%);
+		padding: .5em 2em;
+		font-size: 1.4rem;
+		font-weight: bold;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: black;
+	}
+
+	&__footer{
+		display: flex;
+		justify-content: start;
+		align-items: end;
+	}
+
+	&__topics{
+		padding: 0.5em;
+		font-size: 1.4rem;
+	}
+
+	&__topic{
+		text-decoration: none;
+		color: tomato;
 	}
 }
