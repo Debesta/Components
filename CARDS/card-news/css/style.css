@@ -25,6 +25,7 @@ body {
 .card {
   display: grid;
   grid-template-rows: 250px 1fr 60px;
+  position: relative;
   height: 700px;
   width: 400px;
   margin: 0 2em;
@@ -40,4 +41,39 @@ body {
 .card__img {
   inset: 0;
   width: 100%;
+}
+.card__text-box {
+  position: relative;
+  grid-row: 2/3;
+  height: 70%;
+  overflow: hidden;
+}
+.card__text-box::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 25px;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(221, 221, 221, 0) 0%, rgba(221, 221, 221, 0.4879201681) 30%, rgb(221, 221, 221) 100%);
+}
+.card__title {
+  padding: 0.2em;
+  font-family: serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -0.07em;
+  line-height: 1em;
+}
+.card__text {
+  padding: 0.2em;
+  font-size: 1.6rem;
+}
+.card__time-reading {
+  position: absolute;
+  bottom: 150px;
+  padding: 0.2em;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: grey;
 }/*# sourceMappingURL=style.css.map */
