@@ -27,10 +27,15 @@ Live: [Netlify](https://card-circle-shadow.netlify.app/)
 
 ### card-blur
 
-Card is "bluring" and scaling after hover <br/>
+Card is "bluring" and scaling after hover. <br/>
 Live: [Netlify](https://card-blur.netlify.app/)
 
 ### slide-from-top
 
-It's animated card that's slide from the top to center position with transparent effect.
+It's animated card that's slide from the top to center position with transparent effect. <br/>
 Live: [Netlify](https://slide-from-top.netlify.app/)
+
+### card-news
+
+Card that can be used for news or similar things. I made it for practice css grid. <br/>
+Live: [Netlify](https://card-news.netlify.app/)
