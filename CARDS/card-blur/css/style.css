@@ -53,24 +53,24 @@ body {
   position: absolute;
   inset: 0;
   width: 100%;
-  background-color: rgba(139, 139, 139, 0.8);
+  background-color: rgba(139, 139, 139, 0.1);
   filter: blur();
   transition: opacity 0.5s;
   opacity: 0;
 }
 .card__btn {
   padding: 0.3em 0.6em;
-  border: 7px solid #0e0e83;
+  border: 7px solid #0cc427;
   border-radius: 15px;
   font-size: 4rem;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
   color: #d7d7d7;
-  background-color: #0e0e83;
+  background-color: #0cc427;
   transition: color 0.3s, background-color 0.3s;
 }
 .card__btn:hover {
-  color: #0e0e83;
+  color: #0cc427;
   background-color: transparent;
 }/*# sourceMappingURL=style.css.map */
